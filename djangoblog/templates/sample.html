@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+<title>{% block title %}test{% endblock %}</title>
+{% block content %}
+    {% for i in AuthorData %}
+        <h1>{{i.title}}</h1>
+        <h3>{{i.image}}</h3>
+        <h4>{{i.category.name}}</h4>
+        <h2>{{i.article_author.profile_picture.url}}</h2>
+        <hr>
+        
+    {% endfor %}
+    
+{% endblock %}
+{% block stylesheet %}{% endblock %}
+{% block profile %}{% endblock %}
+{% block <script></script> %}{% endblock %}
